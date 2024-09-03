@@ -7,7 +7,8 @@
     "start": "node dist/index.js",
     "dev": "nodemon",
     "test": "jest",
-    "build": "CI=false tsc"
+    "prisma:generate": "npx prisma generate",
+    "build": "npm run prisma:generate && tsc"
   },
   "keywords": [],
   "author": "",
